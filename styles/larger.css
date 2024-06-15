@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+    /* Additional styles for larger screens */
+    .container {
+        padding: 0 40px;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
