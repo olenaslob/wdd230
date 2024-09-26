@@ -5,56 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce Site Plan</title>
     <style>
-        /* Light Theme */
-        body.light-theme {
-            background-color: #ffffff;
-            color: #333333;
+        body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
-
-        /* Dark Theme */
-        body.dark-theme {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            font-family: 'Times New Roman', serif;
-        }
-
-        h1, h2 {
+        h1, h2, h3 {
             color: #0066cc;
         }
-
-        /* Primary Color for Light Theme */
-        .light-theme h1, .light-theme h2 {
-            color: #0066cc;
+        .color-swatch {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border: 1px solid #000;
         }
-
-        /* Primary Color for Dark Theme */
-        .dark-theme h1, .dark-theme h2 {
-            color: #ffcc00;
-        }
-
-        /* Buttons to switch themes */
-        .theme-button {
-            padding: 10px 20px;
-            margin-top: 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .light-btn {
-            background-color: #3498db;
-            color: white;
-        }
-
-        .dark-btn {
-            background-color: #34495e;
-            color: white;
+        .wireframe-link {
+            display: block;
+            margin-bottom: 10px;
         }
     </style>
 </head>
-<body class="light-theme">
-
+<body>
     <header>
         <h1>Chamber of Commerce Site Plan</h1>
     </header>
@@ -62,14 +37,14 @@
     <main>
         <section id="site-name">
             <h2>Site Name</h2>
-            <p>Calgary Chamber of Commerce</p>
+            <p>Carlsbad Chamber of Commerce</p>
             <p>Reason for selection: This name represents the city in which the chamber operates.</p>
         </section>
 
         <section id="site-purpose">
             <h2>Site Purpose</h2>
             <p>"The Carlsbad Chamber of Commerce acts as a regional economic catalyst, leadership convener and community champion. We promote business through member services, economic and community development, and public policy that balances economic prosperity" - carlsbad.org site description</p>
-            <p>Another purpose is to foster collaboration among local businesses to strengthen the local economy.</p>
+            <p>[Add at least one more purpose here]</p>
         </section>
 
         <section id="scenarios">
@@ -83,48 +58,58 @@
 
         <section id="color-schema">
             <h2>Color Schema</h2>
-            <p>Primary Color (Light): #0066cc - Used for headings and main elements in the light theme.</p>
-            <p>Primary Color (Dark): #ffcc00 - Used for headings and main elements in the dark theme.</p>
-            <p>Secondary Color: #333333 - Used for body text in the light theme.</p>
-            <p>Secondary Color: #ecf0f1 - Used for body text in the dark theme.</p>
+            <h3>Option 1: Professional Blue</h3>
+            <div>
+                <span class="color-swatch" style="background-color: #003366;"></span>
+                <span>Primary Color: #003366 (Dark Blue) - Used for headers and primary elements</span>
+            </div>
+            <div>
+                <span class="color-swatch" style="background-color: #336699;"></span>
+                <span>Secondary Color: #336699 (Medium Blue) - Used for accents and secondary elements</span>
+            </div>
+            <div>
+                <span class="color-swatch" style="background-color: #FFFFFF;"></span>
+                <span>Background Color: #FFFFFF (White) - Used for page background</span>
+            </div>
+
+            <h3>Option 2: Modern Gray</h3>
+            <div>
+                <span class="color-swatch" style="background-color: #333333;"></span>
+                <span>Primary Color: #333333 (Dark Gray) - Used for text and primary elements</span>
+            </div>
+            <div>
+                <span class="color-swatch" style="background-color: #666666;"></span>
+                <span>Secondary Color: #666666 (Medium Gray) - Used for secondary elements</span>
+            </div>
+            <div>
+                <span class="color-swatch" style="background-color: #F5F5F5;"></span>
+                <span>Background Color: #F5F5F5 (Light Gray) - Used for page background</span>
+            </div>
         </section>
 
         <section id="typography">
             <h2>Typography</h2>
-            <p>Heading Font (Light Theme): Arial, sans-serif - Used for headings in the light theme.</p>
-            <p>Heading Font (Dark Theme): 'Times New Roman', serif - Used for headings in the dark theme.</p>
-            <p>Body Font (Light Theme): Arial, sans-serif - Used for the body text in the light theme.</p>
-            <p>Body Font (Dark Theme): 'Times New Roman', serif - Used for the body text in the dark theme.</p>
+            <h3>Option 1: Serif and Sans-serif Combination</h3>
+            <p style="font-family: 'Georgia', serif;">Heading Font: Georgia - Used for headings and titles</p>
+            <p style="font-family: 'Arial', sans-serif;">Body Font: Arial - Used for body text and general content</p>
+
+            <h3>Option 2: Modern Sans-serif</h3>
+            <p style="font-family: 'Helvetica', 'Arial', sans-serif;">Heading Font: Helvetica - Used for headings and titles</p>
+            <p style="font-family: 'Verdana', sans-serif;">Body Font: Verdana - Used for body text and general content</p>
         </section>
 
         <section id="wireframe">
             <h2>Wireframe</h2>
             <h3>Mobile View</h3>
-            <!-- Insert or link to mobile wireframe image here -->
+            <a href="images/mobile-wireframe.svg" class="wireframe-link">View Mobile Wireframe Sketch</a>
+
             <h3>Desktop View</h3>
-            <!-- Insert or link to desktop wireframe image here -->
+            <a href="images/desktop-wireframe.svg" class="wireframe-link">View Desktop Wireframe Sketch</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Olena Slobodeniuk - WDD 230 Project</p>
+        <p>&copy; 2024 [Your Name] - WDD 230 Project</p>
     </footer>
-
-    <!-- Theme Switcher Buttons -->
-    <button class="theme-button light-btn" onclick="setLightTheme()">Light Theme</button>
-    <button class="theme-button dark-btn" onclick="setDarkTheme()">Dark Theme</button>
-
-    <script>
-        // Function to set light theme
-        function setLightTheme() {
-            document.body.className = 'light-theme';
-        }
-
-        // Function to set dark theme
-        function setDarkTheme() {
-            document.body.className = 'dark-theme';
-        }
-    </script>
-
 </body>
 </html>
